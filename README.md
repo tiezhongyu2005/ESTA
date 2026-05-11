@@ -33,7 +33,7 @@ In ESTA, four state transformation operators are employed, namely:
 The rotation transformation is defined as
 
 $$
-s_{k+1} = x_k + \alpha R_r \frac{u_k}{|u_k|_2}
+s_{k+1} = s_k + \alpha R_r \frac{u_k}{|u_k|_2}
 $$
 
 where:
@@ -51,7 +51,7 @@ The rotation transformation performs local search within a hypersphere centered 
 The translation transformation is defined as
 
 $$
-s_{k+1} = x_k + \beta R_t (s_k - s_{k-1})
+s_{k+1} = s_k + \beta R_t (s_k - s_{k-1})
 $$
 
 where:
